@@ -12,7 +12,7 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 16
-          cache: 'npm'
+      - uses: c-hive/gha-npm-cache@v1
       - run: npm ci
       - run: npm test
 
@@ -24,8 +24,8 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 16
-          cache: 'npm'
           registry-url: https://registry.npmjs.org/
+      - uses: c-hive/gha-npm-cache@v1
       - run: npm ci
       - run: npm publish
         env:
