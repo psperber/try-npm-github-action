@@ -1,16 +1,19 @@
 {
   "name": "@psperber/try-npm-github-action",
   "version": "0.0.2",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "echo 'pseudo test'"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/psperber/try-npm-github-action.git"
   },
-  "scripts": {
-    "test": "echo 'pseudo test'"
+  "publishConfig": {
+    "access": "public"
   },
-  "files": [
-    "index.js"
-  ],
   "dependencies": {
   }
 }
