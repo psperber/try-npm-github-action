@@ -18,5 +18,5 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - uses: c-hive/gha-npm-cache@v1
-      - run: npm ci
+      - run: npm ci --ignore-scripts
       - run: npm test
